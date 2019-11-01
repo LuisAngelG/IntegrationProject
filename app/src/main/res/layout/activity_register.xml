@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:screenOrientation="portrait"
+    android:gravity="center"
+    android:background="@drawable/ic_img_background"
+    tools:context=".Views.ComentaryActivity">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:src="@drawable/ic_register"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:text="Registro de Usuario"
+            android:gravity="center"
+            android:layout_marginBottom="16dp"
+            android:textSize="32dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:background="@android:color/white"
+                android:id="@+id/txt_firstname"
+                android:textSize="18dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:hint="Nombre"/>
+
+            <EditText
+                android:background="@android:color/white"
+                android:id="@+id/txt_lastname"
+                android:textSize="18dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:hint="Apellido"/>
+
+            <EditText
+                android:background="@android:color/white"
+                android:id="@+id/txt_email"
+                android:textSize="18dp"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="16dp"
+                android:layout_height="wrap_content"
+                android:hint="Correo Electronico"/>
+
+            <Spinner
+                android:background="@android:color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/type_user"
+                android:layout_marginBottom="16dp"/>
+
+            <EditText
+                android:background="@android:color/white"
+                android:id="@+id/txt_password"
+                android:textSize="18dp"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="16dp"
+                android:layout_height="wrap_content"
+                android:hint="Contraseña"
+                android:inputType="textPassword"/>
+
+            <EditText
+                android:id="@+id/txt_re_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Confirmar Contraseña"
+                android:layout_marginBottom="16dp"
+                android:background="@android:color/white"
+                android:textSize="18dp"
+                android:inputType="textPassword"/>
+
+            <Button
+                android:id="@+id/btn_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Registrar"
+                android:textSize="24dp"/>
+
+            <Button
+                android:id="@+id/btn_logout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Regresar"
+                android:onClick="Return"
+                android:textSize="24dp"
+                tools:ignore="OnClick" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

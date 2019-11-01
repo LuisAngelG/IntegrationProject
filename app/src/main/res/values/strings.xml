@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">IntegrationProject</string>
+    <string-array name="list_category">
+        <item>Mito</item>
+        <item>Leyenda</item>
+        <item>Costumbre</item>
+        <item>Otro</item>
+    </string-array>
+
+    <string-array name="type_user">
+        <item>Extrangero</item>
+        <item>Peruano</item>
+    </string-array>
+</resources>

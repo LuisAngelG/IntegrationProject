@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    android:screenOrientation="portrait"
+    android:background="@drawable/img_background"
+    tools:context=".Views.ComentaryActivity">
+
+    <ImageView
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:src="@drawable/ic_register"
+        android:layout_marginBottom="16dp"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:gravity="center"
+        android:text="Registro de Comentario"
+        android:layout_marginBottom="16dp"
+        android:textSize="32dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <EditText
+            android:background="@android:color/white"
+            android:id="@+id/txt_descripcion"
+            android:textSize="18dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:hint="Descripción"/>
+
+        <Spinner
+            android:background="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/list_category"
+            android:layout_marginBottom="16dp"/>
+
+        <EditText
+            android:background="@android:color/white"
+            android:id="@+id/txt_commentary"
+            android:textSize="18dp"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="16dp"
+            android:layout_height="wrap_content"
+            android:hint="Comentario"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Publicar"
+            android:textSize="24dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
